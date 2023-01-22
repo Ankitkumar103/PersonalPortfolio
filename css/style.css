@@ -154,7 +154,13 @@ ul {
 }
 
 .btn:hover {
+    background-color: var(--text-black-900);
     transform: scale(1.05);
+}
+
+.btn:active {
+    color: var(--skin-color);
+    background-color: var(--bg-black-900);
 }
 
 .shadow-dark {
@@ -316,6 +322,7 @@ ul {
 .home .home-info {
     flex: 0 0 60%;
     max-width: 60%;
+    margin-top: 70px;
 }
 
 h3.hello {
@@ -340,7 +347,7 @@ h3.my-profession {
 }
 
 .home-info p {
-    margin-bottom: 70px;
+    margin-bottom: 30px;
     font-size: 18px;
     color: var(--text-black-700);
 }
@@ -378,6 +385,26 @@ h3.my-profession {
     margin: auto;
     border-radius: 5px;
     height: 400px;
+}
+
+.home .social-media {
+    display: flex;
+    flex-direction: row;
+    margin-bottom: 30px;
+}
+
+.home .social-media li a {
+    display: inline-block;
+    font-size: 25px;
+    color: var(--text-black-900);
+}
+
+.home .social-media li a i {
+    margin-right: 15px;
+}
+
+.home .social-media li a:hover {
+    color: var(--skin-color);
 }
 
 /* About */
@@ -491,10 +518,16 @@ h3.my-profession {
     font-weight: 400;
 }
 
-.about .about-content .education,
+/* .about .about-content .education,
 .about .about-content .experience {
     flex: 0 0 50%;
     max-width: 50%;
+    margin-top: 30px;
+} */
+
+.about .about-content .education {
+    flex: 0 0 100%;
+    max-width: 100%;
     margin-top: 30px;
 }
 
@@ -845,6 +878,7 @@ h3.my-profession {
         max-width: 40%;
         text-align: center;
         position: relative;
+        margin-top: auto;
     }
 
     .home-img::after {
@@ -869,6 +903,7 @@ h3.my-profession {
         flex: 0 0 100%;
         max-width: 100%;
         order: 2;
+        margin-top: auto;
     }
 
     .home .home-img {
@@ -909,5 +944,22 @@ h3.my-profession {
 @media screen and (min-width: 0px) and (max-width: 280px) {
     .home .home-img {
         display: none;
+        margin-top: auto;
+    }
+}
+
+@media screen and (min-width: 0px) and (max-width: 768px) {
+    .home .social-media {
+        justify-content: center;
+        align-items: center;
+        margin-bottom: 20px;
+    }
+
+    .home .social-media li a i {
+        margin-right: 10px;
+    }
+
+    .home-info p {
+        margin-bottom: 20px;
     }
 }
