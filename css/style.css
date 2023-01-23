@@ -113,7 +113,7 @@ ul {
 .section-title h2::before {
     content: "";
     height: 4px;
-    width: 50px;
+    width: 100px;
     background-color: var(--skin-color);
     position: absolute;
     top: 100%;
@@ -123,7 +123,7 @@ ul {
 .section-title h2::after {
     content: "";
     height: 4px;
-    width: 25px;
+    width: 40px;
     background-color: var(--skin-color);
     position: absolute;
     top: 100%;
@@ -309,7 +309,7 @@ ul {
 }
 
 .aside .nav li a i {
-    margin-right: 15px;
+    margin-right: 5px;
 }
 
 /* Home */
@@ -589,7 +589,7 @@ h3.my-profession {
     color: var(--text-black-700);
 }
 
-.about .about-content .timeline .timeline-date .fa {
+.about .about-content .timeline .timeline-date .fa-solid {
     margin-right: 5px;
 }
 
@@ -660,7 +660,8 @@ h3.my-profession {
 
 .service .service-item .service-item-inner h4 {
     font-size: 18px;
-    margin-bottom: 15px;
+    margin-top: 15px;
+    margin-bottom: 5px;
     color: var(--text-black-900);
     font-weight: 700;
     text-transform: capitalize;
@@ -723,8 +724,8 @@ h3.my-profession {
 }
 
 .contact .contact-info-item {
-    flex: 0 0 25%;
-    max-width: 25%;
+    flex: 0 0 33.3%;
+    max-width: 33.3%;
     text-align: center;
     margin-bottom: 60px;
 }
@@ -733,24 +734,30 @@ h3.my-profession {
     display: inline-block;
 }
 
-.contact .contact-info-item .icon .fa {
+.contact .contact-info-item .icon .fa-solid {
     font-size: 25px;
     color: var(--skin-color);
 }
 
-.contact .contact-info-item h4 {
+.contact .contact-info-item div.link,
+.contact .contact-info-item div p,
+.contact .contact-info-item div a {
     font-size: 18px;
-    font-weight: 700;
     color: var(--text-black-900);
     text-transform: capitalize;
     margin: 15px 0 5px;
 }
 
-.contact .contact-info-item p {
+.contact .contact-info-item a {
     font-size: 16px;
     line-height: 25px;
     color: var(--text-black-700);
     font-weight: 400;
+    transition: all 0.2s ease;
+}
+
+.contact .contact-info-item a:hover {
+    color: var(--skin-color);
 }
 
 .contact .contact-form {
