@@ -793,7 +793,7 @@ h3.my-profession {
 .contact .contact-info-item div a {
     font-size: 18px;
     color: var(--text-black-900);
-    text-transform: capitalize;
+    text-transform: none;
     margin: 15px 0 5px;
 }
 
@@ -802,11 +802,12 @@ h3.my-profession {
     line-height: 25px;
     color: var(--text-black-700);
     font-weight: 400;
-    transition: all 0.2s ease;
+    transition: all 0.4s ease;
 }
 
 .contact .contact-info-item a:hover {
     color: var(--skin-color);
+    text-decoration: underline;
 }
 
 .contact .contact-form {
